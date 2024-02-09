@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-guitar',
@@ -7,10 +8,11 @@ import { Component } from '@angular/core';
 })
 export class GuitarComponent {
 
-  name = 'Kelsey'
 
+
+    constructor(public dataService: DataService) { }
 
   changeName() {
-    this.name = 'Kornegay'
+    this.dataService.name = 'Kornegay'
   }
 }

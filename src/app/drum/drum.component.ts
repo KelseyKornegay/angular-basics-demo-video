@@ -9,6 +9,7 @@ import { DataService } from '../data.service';
 export class DrumComponent {
 
 
-constructor(dataService: DataService) { }
+
+constructor(public dataService: DataService) { }
 
 }
